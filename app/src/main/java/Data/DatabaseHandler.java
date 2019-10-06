@@ -24,8 +24,8 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         //SQL - Structured Query Language
         String CREATE_CONTACT_TABLE = "CREATE TABLE " + Util.TABLE_NAME + "("
-                + Util.KEY_ID + " INTEGER PRIMARY KEY," +  Util.KEY_NAME + "TEXT,"
-                + Util.KEY_PHONE_NUMBER + "TEXT" + ")";
+                + Util.KEY_ID + " INTEGER PRIMARY KEY," + Util.KEY_NAME + " TEXT,"
+                + Util.KEY_PHONE_NUMBER + " TEXT" + ")";
 
         db.execSQL(CREATE_CONTACT_TABLE);
 
@@ -85,7 +85,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
         //Create a query to select all contacts from the contact table in the Contact DB
 
-            String selectAll = "SELECT * FROM " + Util.TABLE_NAME;
+            String selectAll = " SELECT * FROM " + Util.TABLE_NAME;
             Cursor cursor = db.rawQuery(selectAll, null);
 
             //Loop through our contacts

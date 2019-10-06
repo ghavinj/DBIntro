@@ -22,10 +22,10 @@ public class MainActivity extends AppCompatActivity {
 
         //Insert Contacts
         Log.d("Insert", "Inserting...");
-        db.addContact(new Contact("Ghavin Johnson", "7625668798"));
-        db.addContact(new Contact("Amy","7665432345"));
-        db.addContact(new Contact("Mike","7890034621"));
-        db.addContact(new Contact("Phil","1328974352"));
+        db.addContact(new Contact("Bony", "7625658798"));
+        db.addContact(new Contact("Milka","7665431345"));
+        db.addContact(new Contact("Swanson","7830034621"));
+        db.addContact(new Contact("Doug","1328974252"));
 
 
         //Read contacts back
